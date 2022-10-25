@@ -1,53 +1,357 @@
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <title>Discussion Page</title>
-</head>
-<body>
-  <div class="bg-gray-500 p-20 h-full">
-    <div class="bg-white h-full p-10 mx-64">
-      <h3 class="text-2xl font-bold">Discussion</h3>
-      <!-- top box -->
-      <div class="my-10 h-14 flex items-center">
-        <div class="flex space-x-5 items-center w-full">
-          <div class="flex items-center justify-center bg-gray-100 rounded-full p-3 w-14 border">
-            <p class="w-4 font-bold text-gray-500">M</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Discussion Page</title>
+  </head>
+  <body>
+    <div class="bg-gray-500 p-20 h-full overflow-hidden">
+      <div class="bg-white h-full p-10 mx-64">
+        <h3 class="text-2xl font-bold">Discussion</h3>
+        <!-- top box -->
+        <div class="my-10 h-14 flex items-center">
+          <div class="flex space-x-5 items-center w-full">
+            <!-- circle diagram -->
+            <div
+              class="flex items-center justify-center bg-gray-100 rounded-full p-3 w-12 h-12 border"
+            >
+              <p class="w-4 font-bold text-gray-500">M</p>
+            </div>
+            <!-- iput container -->
+            <div class="w-full h-12">
+              <input
+                type="text"
+                placeholder="What are your thoughts?"
+                class="w-full h-full p-4 border-2 border-gray-300 rounded-md"
+              />
+            </div>
+            <button
+              type="submit"
+              class="bg-purple-600 p-2 rounded-md text-white hover:bg-purple-500"
+            >
+              Comment
+            </button>
           </div>
-          <div class="w-full h-12">
-            <input type="text" placeholder="What are your thoughts?" class="w-full h-full p-4 border-2 border-gray-300 rounded-md">
-          </div>
-          <button type="submit" class="bg-purple-600 p-2 rounded-md text-white hover:bg-purple-500">Comment</button>
         </div>
-      </div>
-      <!-- line -->
-      <div class="bg-gray-100 h-0.5 my-10"></div>
-      <!-- posts container -->
-      <div class="bg-blue-200">
-        <!-- single post -->
-        <div class="flex">
-          <div>
-            <img src="" alt="">
-          </div>
-          <div class="bg-red-400">
-            <div class="flex">
-              <h4>Rob Hipe</h4>
-              <p> - 45 mins ago</p>
-            </div>
-            <p>conttenance</p>
-            
-            <!-- action container -->
-            <div class="flex bg-green-300">
-              <p>Upvote</p>
-              <p>Reply</p>
-            </div>
-          </div>
+        <!-- line -->
+        <div class="bg-gray-100 h-0.5 my-10"></div>
+        <!-- posts container -->
+        <div class="h-3/4 flex w-full overflow-scroll">
+          <!-- posts container -->
+          <div class="mb-10">
+            <!-- single post container -->
+            <div class="flex py-2 space-x-5">
+              <!-- circle diagram -->
+              <div
+                class="flex items-center justify-center bg-gray-100 rounded-full p-3 w-12 h-12 border"
+              >
+                <p class="w-4 font-bold text-gray-500 text-center">B</p>
+              </div>
+              <div class="w-full mb-3">
+                <!-- author details -->
+                <div class="flex items-center">
+                  <h4 class="font-semibold mr-2 text-lg">Rob Hipe</h4>
+                  <p class="text-gray-300 text-sm">- 45 mins ago</p>
+                </div>
+                <div class="my-3">
+                  <p class="text-gray-500">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Fuga at ipsam cum, iure tempore commodi est porro dolor,
+                    illum odit, eligendi natus. Esse in necessitatibus nesciunt
+                    culpa dolorum. Consequatur, quaerat?
+                  </p>
+                </div>
 
+                <!-- action container -->
+                <div class="flex space-x-5 mt-10">
+                  <p class="text-gray-500 text-sm">Upvote</p>
+                  <p class="text-gray-500 text-sm">Reply</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- post 2 -->
+            <div class="flex py-2 space-x-5">
+              <!-- circle diagram -->
+              <div
+                class="flex items-center justify-center bg-gray-100 rounded-full p-3 w-12 h-12 border"
+              >
+                <p class="w-4 font-bold text-gray-500 text-center">C</p>
+              </div>
+              <div class="bg-red-400 w-full">
+                <!-- author details -->
+                <div class="flex">
+                  <h4 class="font-semibold mr-2">Rob Hipe</h4>
+                  <p class="text-gray-300">- 45 mins ago</p>
+                </div>
+                <div class="my-3">
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Fuga at ipsam cum, iure tempore commodi est porro dolor,
+                    illum odit, eligendi natus. Esse in necessitatibus nesciunt
+                    culpa dolorum. Consequatur, quaerat?
+                  </p>
+                </div>
+
+                <!-- action container -->
+                <div class="flex bg-green-300 space-x-5 mt-10">
+                  <p class="text-gray-300">Upvote</p>
+                  <p class="text-gray-300">Reply</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- post 2 -->
+            <div class="flex py-2 space-x-5">
+              <!-- circle diagram -->
+              <div
+                class="flex items-center justify-center bg-gray-100 rounded-full p-3 w-12 h-12 border"
+              >
+                <p class="w-4 font-bold text-gray-500 text-center">B</p>
+              </div>
+              <div class="bg-red-400 w-full">
+                <!-- author details -->
+                <div class="flex">
+                  <h4 class="font-semibold mr-2">Rob Hipe</h4>
+                  <p class="text-gray-300">- 45 mins ago</p>
+                </div>
+                <div class="my-3">
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Fuga at ipsam cum, iure tempore commodi est porro dolor,
+                    illum odit, eligendi natus. Esse in necessitatibus nesciunt
+                    culpa dolorum. Consequatur, quaerat?
+                  </p>
+                </div>
+
+                <!-- action container -->
+                <div class="flex bg-green-300 space-x-5 mt-10">
+                  <p class="text-gray-300">Upvote</p>
+                  <p class="text-gray-300">Reply</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- post 2 -->
+            <div class="flex py-2 space-x-5">
+              <!-- circle diagram -->
+              <div
+                class="flex items-center justify-center bg-gray-100 rounded-full p-3 w-12 h-12 border"
+              >
+                <p class="w-4 font-bold text-gray-500 text-center">B</p>
+              </div>
+              <div class="bg-red-400 w-full">
+                <!-- author details -->
+                <div class="flex">
+                  <h4 class="font-semibold mr-2">Rob Hipe</h4>
+                  <p class="text-gray-300">- 45 mins ago</p>
+                </div>
+                <div class="my-3">
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Fuga at ipsam cum, iure tempore commodi est porro dolor,
+                    illum odit, eligendi natus. Esse in necessitatibus nesciunt
+                    culpa dolorum. Consequatur, quaerat?
+                  </p>
+                </div>
+
+                <!-- action container -->
+                <div class="flex bg-green-300 space-x-5 mt-10">
+                  <p class="text-gray-300">Upvote</p>
+                  <p class="text-gray-300">Reply</p>
+                </div>
+              </div>
+            </div>
+            <!-- post 2 -->
+            <div class="flex py-2 space-x-5">
+              <!-- circle diagram -->
+              <div
+                class="flex items-center justify-center bg-gray-100 rounded-full p-3 w-12 h-12 border"
+              >
+                <p class="w-4 font-bold text-gray-500 text-center">B</p>
+              </div>
+              <div class="bg-red-400 w-full">
+                <!-- author details -->
+                <div class="flex">
+                  <h4 class="font-semibold mr-2">Rob Hipe</h4>
+                  <p class="text-gray-300">- 45 mins ago</p>
+                </div>
+                <div class="my-3">
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Fuga at ipsam cum, iure tempore commodi est porro dolor,
+                    illum odit, eligendi natus. Esse in necessitatibus nesciunt
+                    culpa dolorum. Consequatur, quaerat?
+                  </p>
+                </div>
+
+                <!-- action container -->
+                <div class="flex bg-green-300 space-x-5 mt-10">
+                  <p class="text-gray-300">Upvote</p>
+                  <p class="text-gray-300">Reply</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- post 2 -->
+            <div class="flex py-2 space-x-5">
+              <!-- circle diagram -->
+              <div
+                class="flex items-center justify-center bg-gray-100 rounded-full p-3 w-12 h-12 border"
+              >
+                <p class="w-4 font-bold text-gray-500 text-center">B</p>
+              </div>
+              <div class="bg-red-400 w-full">
+                <!-- author details -->
+                <div class="flex">
+                  <h4 class="font-semibold mr-2">Rob Hipe</h4>
+                  <p class="text-gray-300">- 45 mins ago</p>
+                </div>
+                <div class="my-3">
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Fuga at ipsam cum, iure tempore commodi est porro dolor,
+                    illum odit, eligendi natus. Esse in necessitatibus nesciunt
+                    culpa dolorum. Consequatur, quaerat?
+                  </p>
+                </div>
+
+                <!-- action container -->
+                <div class="flex bg-green-300 space-x-5 mt-10">
+                  <p class="text-gray-300">Upvote</p>
+                  <p class="text-gray-300">Reply</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- post 2 -->
+            <div class="flex py-2 space-x-5">
+              <!-- circle diagram -->
+              <div
+                class="flex items-center justify-center bg-gray-100 rounded-full p-3 w-12 h-12 border"
+              >
+                <p class="w-4 font-bold text-gray-500 text-center">B</p>
+              </div>
+              <div class="bg-red-400 w-full">
+                <!-- author details -->
+                <div class="flex">
+                  <h4 class="font-semibold mr-2">Rob Hipe</h4>
+                  <p class="text-gray-300">- 45 mins ago</p>
+                </div>
+                <div class="my-3">
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Fuga at ipsam cum, iure tempore commodi est porro dolor,
+                    illum odit, eligendi natus. Esse in necessitatibus nesciunt
+                    culpa dolorum. Consequatur, quaerat?
+                  </p>
+                </div>
+
+                <!-- action container -->
+                <div class="flex bg-green-300 space-x-5 mt-10">
+                  <p class="text-gray-300">Upvote</p>
+                  <p class="text-gray-300">Reply</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- post 2 -->
+            <div class="flex py-2 space-x-5">
+              <!-- circle diagram -->
+              <div
+                class="flex items-center justify-center bg-gray-100 rounded-full p-3 w-12 h-12 border"
+              >
+                <p class="w-4 font-bold text-gray-500 text-center">B</p>
+              </div>
+              <div class="bg-red-400 w-full">
+                <!-- author details -->
+                <div class="flex">
+                  <h4 class="font-semibold mr-2">Rob Hipe</h4>
+                  <p class="text-gray-300">- 45 mins ago</p>
+                </div>
+                <div class="my-3">
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Fuga at ipsam cum, iure tempore commodi est porro dolor,
+                    illum odit, eligendi natus. Esse in necessitatibus nesciunt
+                    culpa dolorum. Consequatur, quaerat?
+                  </p>
+                </div>
+
+                <!-- action container -->
+                <div class="flex bg-green-300 space-x-5 mt-10">
+                  <p class="text-gray-300">Upvote</p>
+                  <p class="text-gray-300">Reply</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- post 2 -->
+            <div class="flex py-2 space-x-5">
+              <!-- circle diagram -->
+              <div
+                class="flex items-center justify-center bg-gray-100 rounded-full p-3 w-12 h-12 border"
+              >
+                <p class="w-4 font-bold text-gray-500 text-center">B</p>
+              </div>
+              <div class="bg-red-400 w-full">
+                <!-- author details -->
+                <div class="flex">
+                  <h4 class="font-semibold mr-2">Rob Hipe</h4>
+                  <p class="text-gray-300">- 45 mins ago</p>
+                </div>
+                <div class="my-3">
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Fuga at ipsam cum, iure tempore commodi est porro dolor,
+                    illum odit, eligendi natus. Esse in necessitatibus nesciunt
+                    culpa dolorum. Consequatur, quaerat?
+                  </p>
+                </div>
+
+                <!-- action container -->
+                <div class="flex bg-green-300 space-x-5 mt-10">
+                  <p class="text-gray-300">Upvote</p>
+                  <p class="text-gray-300">Reply</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- post 2 -->
+            <div class="flex py-2 space-x-5">
+              <!-- circle diagram -->
+              <div
+                class="flex items-center justify-center bg-gray-100 rounded-full p-3 w-12 h-12 border"
+              >
+                <p class="w-4 font-bold text-gray-500 text-center">B</p>
+              </div>
+              <div class="bg-red-400 w-full">
+                <!-- author details -->
+                <div class="flex">
+                  <h4 class="font-semibold mr-2">Rob Hipe</h4>
+                  <p class="text-gray-300">- 45 mins ago</p>
+                </div>
+                <div class="my-3">
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Fuga at ipsam cum, iure tempore commodi est porro dolor,
+                    illum odit, eligendi natus. Esse in necessitatibus nesciunt
+                    culpa dolorum. Consequatur, quaerat?
+                  </p>
+                </div>
+
+                <!-- action container -->
+                <div class="flex bg-green-300 space-x-5 mt-10">
+                  <p class="text-gray-300">Upvote</p>
+                  <p class="text-gray-300">Reply</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</body>
+  </body>
 </html>
